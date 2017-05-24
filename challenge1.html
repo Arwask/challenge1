@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+
+	<body>
+		<header>Challenge#1</header>
+		<form>
+			<label for="volume">Voulume:</label>
+			<input type="Range" id ="volume" min="0" max="1000" value="100" step="100" onchange="update(this.value)">
+			<label for="number"><br>Enter Number</label>
+			<input type="number" id="volumeNumber" min="0" max="1000" step="100" value="100" onchange="change(this.value)">
+			
+		</form>
+		<script>
+			var slider = document.getElementById('volume');
+
+			var scroller = document.getElementById('volumeNumber');
+			slider.onchange = function () 
+			{
+				scroller.value = this.value;
+			} 
+			scroller.onchange = function ()
+			{
+				slider.value = this.value;
+			}
+			// while (x)
+			// {
+			// 	if(v !== def)
+			// 	{
+			// 		alert('different values');
+			// 		break;
+			// 	}
+			// 	else
+			// 	{
+			// 		alert('same values');
+			// 	}
+			// }
+		</script>
+	</body>
+</html>
